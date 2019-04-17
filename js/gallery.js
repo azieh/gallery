@@ -1,6 +1,6 @@
 function loadPhotos (folderName) {
     $.ajax({
-        url: "https://github.com/azieh/gallery/tree/master/foto/" + folderName,
+        url: "https://azieh.github.io/gallery/foto/" + folderName,
         success: function(data){
            $(data).find("td > a").each(function(){
               // will loop through 
