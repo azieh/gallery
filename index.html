@@ -20,9 +20,9 @@
 <div class="container gallery-container">
 
     <h1>Codziennie niecodziennie</h1>
-    <div class="tz-gallery">
-        <div id="galleryOne" class="row">
-        <one-pic-template v-for="pic in gallery" v-bind:todo="pic"></one-pic-template>
+    <div id="galleryOne" class="tz-gallery">
+        <div class="row">
+            <one-pic-template v-for="pic in gallery" :pic="pic"></one-pic-template>
         </div>
     </div>
 </div>
