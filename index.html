@@ -21,40 +21,12 @@
 
     <h1>Codziennie niecodziennie</h1>
     <div class="tz-gallery">
-        <div class="row">
-            <div class="col-sm-12 col-md-4">
-                <a class="lightbox" href="../images/bridge.jpg">
-                    <img src="../images/bridge.jpg" alt="Bridge">
-                </a>
-            </div>
-            <div class="col-sm-6 col-md-4">
-                <a class="lightbox" href="../images/park.jpg">
-                    <img src="../images/park.jpg" alt="Park">
-                </a>
-            </div>
-            <div class="col-sm-6 col-md-4">
-                <a class="lightbox" href="../images/tunnel.jpg">
-                    <img src="../images/tunnel.jpg" alt="Tunnel">
-                </a>
-            </div>
-            <div class="col-sm-12 col-md-8">
-                <a class="lightbox" href="../images/traffic.jpg">
-                    <img src="../images/traffic.jpg" alt="Traffic">
-                </a>
-            </div>
-            <div class="col-sm-6 col-md-4">
-                <a class="lightbox" href="../images/coast.jpg">
-                    <img src="../images/coast.jpg" alt="Coast">
-                </a>
-            </div> 
-            <div class="col-sm-6 col-md-4">
-                <a class="lightbox" href="../images/rails.jpg">
-                    <img src="../images/rails.jpg" alt="Rails">
-                </a>
-            </div>
+        <div id="galleryOne" class="row">
+        <one-pic-template v-for="pic in gallery" v-bind:todo="pic"></one-pic-template>
         </div>
     </div>
 </div>
+<script src="js/vue.min.js"></script>
 <script
   src="https://code.jquery.com/jquery-3.4.0.min.js"
   integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
